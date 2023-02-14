@@ -1,0 +1,15 @@
+# VS Code Idea
+.vscode/
+
+# Build
+build/
+
+# Managed Components
+managed_components/
+
+# SDK Configurations
+sdkconfig
+sdkconfig.old
+
+# Dependencies
+dependencies.lock

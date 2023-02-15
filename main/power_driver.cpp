@@ -15,13 +15,13 @@ power_driver_handle_t power_driver_init(power_driver_config_t *config)
     ESP_LOGI(TAG, "Initializing GPIO pin > %d", gpio_pin);
     err = gpio_reset_pin(gpio_pin);
     if (err != ESP_OK) {
-        ESP_LOGE(TAG, "gpio reset pin failed");
+        ESP_LOGE(TAG, "GPIO reset pin failed");
         return NULL;
     }
-    /* Set the GPIO as a push/pull output */
+
     err = gpio_set_direction(gpio_pin, GPIO_MODE_OUTPUT);
     if (err != ESP_OK) {
-        ESP_LOGE(TAG, "gpio set direction failed");
+        ESP_LOGE(TAG, "GPIO set direction failed");
         return NULL;
     }
     gpio_set_level(gpio_pin, false);

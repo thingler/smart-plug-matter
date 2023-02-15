@@ -102,7 +102,7 @@ extern "C" void app_main()
     }
 
     plug_endpoint_id = endpoint::get_id(endpoint);
-    ESP_LOGI(TAG, "Switch created with endpoint_id %d", plug_endpoint_id);
+    ESP_LOGI(TAG, "Plug created with endpoint_id %d", plug_endpoint_id);
 
     /* Add additional features to the node */
 
